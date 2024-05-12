@@ -13,8 +13,7 @@ public class Cart {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
-
-    private String cartNumber;
+    private Integer userId;
 
     @OneToMany(mappedBy = "cart", cascade = CascadeType.MERGE)
     private List<CartItem> cartItems;

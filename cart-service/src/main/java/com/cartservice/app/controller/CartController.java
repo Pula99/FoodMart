@@ -18,32 +18,6 @@ import java.util.stream.Collectors;
 @RequestMapping("${cartEndpoint.carts}")
 public class CartController {
 
-//    private final CartService cartService;
-//    private final ModelMapper modelMapper;
-
-//    @PostMapping
-//    public ResponseEntity<Cart> createCart(@RequestBody Cart cart) throws Exception {
-//        Cart newCart = cartService.createCart(cart);
-//        return ResponseEntity.status(HttpStatus.CREATED).body(newCart);
-//    }
-
-//    @PostMapping
-//    public ResponseEntity<Cart> createCart(@RequestBody CreateCartDTO createCartDTO){
-//        try {
-//            Cart cart = modelMapper.map(createCartDTO,Cart.class);
-//            Cart newCart = cartService.createCart(cart);
-//            return ResponseEntity.status(HttpStatus.CREATED).body(newCart);
-//        } catch (Exception e) {
-//            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
-//        }
-//    }
-//
-//    @GetMapping("/{id}")
-//    public ResponseEntity<Cart> getCartById(@PathVariable Integer id) throws Exception {
-//        Cart cart = cartService.getCartById(id);
-//        return ResponseEntity.ok(cart);
-//    }
-
     private final CartService cartService;
     private final ModelMapper modelMapper;
 
@@ -51,18 +25,8 @@ public class CartController {
     public ResponseEntity<Cart> createCart(@RequestBody CreateCartDTO createCartDTO) {
         try {
             Cart cart = modelMapper.map(createCartDTO, Cart.class);
-            Cart newCart = cartService.createCart(cart);
-            List<CartItem> itemsList = createCartDTO.getCartItems().stream()
-                    .map(cartLineItemsDTO -> {
-                        CartItem items = modelMapper.map(cartLineItemsDTO, CartItem.class);
-//                        items.setCart(cart); // Set the parent cart
-                        return items;
-                    })
-                    .collect(Collectors.toList());
-            cart.setCartItems(itemsList);
-
-            return ResponseEntity.status(HttpStatus.CREATED).body(cart);
-
+            Cart cartCreated = cartService.createCart(cart);
+            return ResponseEntity.status(HttpStatus.CREATED).body(cartCreated);
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
@@ -80,4 +44,6 @@ public class CartController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
     }
+
+
 }

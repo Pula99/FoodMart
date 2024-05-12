@@ -11,10 +11,10 @@ public class CartItem {
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
     private Integer id;
-    private Integer quantity;
-    private Long price;
 
-    private String productId;
+    private Integer productID;
+
+    private Integer quantity;
 
     @ManyToOne
     @JoinColumn(name = "cart_items")

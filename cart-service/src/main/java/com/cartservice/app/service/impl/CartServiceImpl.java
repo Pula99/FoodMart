@@ -1,5 +1,6 @@
 package com.cartservice.app.service.impl;
 
+import com.cartservice.app.dto.CartItemProductDTO;
 import com.cartservice.app.model.Cart;
 import com.cartservice.app.repository.CartItemRepository;
 import com.cartservice.app.repository.CartRepository;
@@ -8,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.web.client.RestTemplate;
 
 @Service
 @RequiredArgsConstructor
@@ -16,6 +18,8 @@ public class CartServiceImpl implements CartService {
 
     private final CartRepository cartRepository;
     private final CartItemRepository cartItemRepository;
+    private final RestTemplate restTemplate;
+
     @Override
     @Transactional
     public Cart createCart(Cart cart) {
@@ -23,7 +27,7 @@ public class CartServiceImpl implements CartService {
             cartItemRepository.saveAll(cart.getCartItems());
             return cartRepository.save(cart);
         } catch (Exception exception) {
-            log.error("Error occuerd when creating cart with cart number {}, error: {}", cart.getCartNumber(), exception.getMessage());
+            log.error("Error occuerd when creating cart with cart number {}, error: {}", cart.getId(), exception.getMessage());
             throw exception;
         }
     }
@@ -37,5 +41,10 @@ public class CartServiceImpl implements CartService {
             throw exception;
         }
 
+    }
+
+    public CartItemProductDTO getProductById(Integer productId){
+        String productApiUrl = "http://localhost:8080/products/" + productId;
+        return restTemplate.getForObject(productApiUrl, CartItemProductDTO.class);
     }
 }
