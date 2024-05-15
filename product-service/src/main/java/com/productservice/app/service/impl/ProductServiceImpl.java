@@ -1,5 +1,7 @@
 package com.productservice.app.service.impl;
 
+import com.productservice.app.exception.CustomException;
+import com.productservice.app.exception.NotFound;
 import com.productservice.app.model.Product;
 import com.productservice.app.repository.ProductRepository;
 import com.productservice.app.service.ProductService;
@@ -20,23 +22,34 @@ public class ProductServiceImpl implements ProductService {
     private final ModelMapper modelMapper;
 
     @Override
-    public Page<Product> getAllProduct(Pageable pageable) {
+    public Page<Product> getAllProducts(Pageable pageable) {
         try {
             return productRepository.findAll(pageable);
         } catch (Exception exception){
             log.error("Error occurred when getting products");
-            throw exception;
+            throw new CustomException("Error occured when getting products",exception);
         }
-
     }
 
     @Override
-    public Product getProductById(Integer id){
+    public Page<Product> getallProductsByCategory(String category, Pageable pageable){
         try {
-            return productRepository.findById(id).orElseThrow(() -> new RuntimeException("Product not found"));
+            return productRepository.findProductByCategory(category, pageable);
+        } catch (Exception exception){
+            log.error("Error occurred when getting products");
+            throw new CustomException("Error occurred when getting products with category :" + category,exception);
+        }
+    }
+
+    @Override
+    public Product getProductById(String id){
+        try {
+            return productRepository.findById(id).orElseThrow(() -> new NotFound("Product not found with id : %s", id ));
+        } catch (NotFound notFound) {
+            throw notFound;
         } catch (Exception exception) {
-           log.error("Error occured when getting product with id {}",id, exception);
-           throw exception;
+           log.error("Error occurred when getting product with id {}",id, exception);
+           throw new CustomException("Error occurred when getting product with id : " + id, exception);
         }
     }
 
@@ -52,31 +65,35 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Product updateProduct(Integer id, Product updatedProduct) throws Exception {
+    public Product updateProduct(String id, Product updatedProduct){
         try {
-            Product product = productRepository.findById(id).orElseThrow(() -> new RuntimeException("Item not found"));
+            Product product = productRepository.findById(id).orElseThrow(() -> new NotFound("Product not found with id : %s", id));
             modelMapper.map(updatedProduct, product);
             return productRepository.save(product);
+        } catch (NotFound notFound) {
+            throw notFound;
         } catch (Exception exception) {
-            log.error("Error occurred when Updating product with name {}, error: {}", updatedProduct.getProductName(), exception.getMessage());
+            log.error("Error occurred when Updating product with id {}, error: {}", updatedProduct.getId(), exception.getMessage());
             throw exception;
         }
     }
 
     @Override
-    public Product patchProduct(Integer id, Product updatedProduct) throws Exception {
-        try{
-            Product product = productRepository.findById(id).orElseThrow(() -> new RuntimeException("Item not found"));
+    public Product patchProduct(String id, Product updatedProduct){
+        try {
+            Product product = productRepository.findById(id).orElseThrow(() -> new NotFound("Product not found with id : %s", id));
             modelMapper.map(updatedProduct, product);
             return productRepository.save(product);
+        } catch (NotFound notFound) {
+            throw notFound;
         } catch (Exception exception) {
-            log.error("Error occurred when Updating product with name {}, error: {}", updatedProduct.getProductName(), exception.getMessage());
+            log.error("Error occurred when Updating product with id {}, error: {}", updatedProduct.getId(), exception.getMessage());
             throw exception;
         }
     }
 
     @Override
-    public void deleteProduct(Integer id) throws Exception {
+    public void deleteProduct(String id){
         try {
             productRepository.deleteById(id);
         } catch (Exception exception) {

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="365a8ee1-0923-4bac-8eec-e7035cfc32e1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/CartServiceApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/configs/ModelMapperConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/configs/WebMvcConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/controller/AbstractCartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/controller/CartController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/dto/CartItemDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/dto/CreateCartDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/dto/UpdateCartItemDTO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/exception/CustomException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/exception/ErrorResponse.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/exception/NotFound.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/model/Cart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/model/CartItem.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/repository/CartItemRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/repository/CartRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/service/CartItemService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/service/CartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/service/impl/CartItemImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/service/impl/CartServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/database.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/endpoints.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/configs/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/controller/AbstractProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/exception/CustomException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/exception/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/exception/NotFound.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/configs/ModelMapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/configs/ModelMapperConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/dto/PatchProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/dto/PatchProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/repository/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/endpoints.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/endpoints.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2fPqeneTCLONSsZfI8UL71h35Dp" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CartServiceApplication.executor": "Run",
+    "JUnit.All in CartService.executor": "Run",
+    "Maven.FoodMart [compile].executor": "Run",
+    "Maven.ProductService [clean].executor": "Run",
+    "Maven.ProductService [compile].executor": "Run",
+    "Maven.ProductService [install].executor": "Run",
+    "Maven.ProductService [package].executor": "Run",
+    "Maven.ProductService [test].executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.CartServiceApplication (1).executor": "Run",
+    "Spring Boot.CartServiceApplication.executor": "Run",
+    "Spring Boot.ProductServiceApplication.executor": "Run",
+    "git-widget-placeholder": "feature/cart-service",
+    "jdk.selected.JAVA_MODULE": "openjdk-21",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Kusal/ProjectFoodMart/FoodMart-Backend/cart-service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.cartservice.app.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Kusal\FoodMart" />
+      <recent name="D:\Kusal\FoodMart\cart-service\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Kusal\FoodMart" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.productservice.app.configs" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CartServiceApplication">
+    <configuration name="CartServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="CartService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.cartservice.app.CartServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ProductService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.productservice.app.ProductServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ProductServiceApplication" />
+      <item itemvalue="Spring Boot.CartServiceApplication" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="365a8ee1-0923-4bac-8eec-e7035cfc32e1" name="Changes" comment="" />
+      <created>1713713158249</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713713158249</updated>
+      <workItem from="1713713159343" duration="4158000" />
+      <workItem from="1713790654323" duration="2425000" />
+      <workItem from="1713946004828" duration="46000" />
+      <workItem from="1713955061081" duration="2848000" />
+      <workItem from="1714027028458" duration="4190000" />
+      <workItem from="1714031231034" duration="10613000" />
+      <workItem from="1714137462708" duration="18000" />
+      <workItem from="1714148727439" duration="3632000" />
+      <workItem from="1714463671648" duration="718000" />
+      <workItem from="1714485093210" duration="1791000" />
+      <workItem from="1714535169748" duration="841000" />
+      <workItem from="1714568338668" duration="5000" />
+      <workItem from="1714643963989" duration="6028000" />
+      <workItem from="1714738967046" duration="6185000" />
+      <workItem from="1714793884001" duration="11275000" />
+      <workItem from="1714878565960" duration="1491000" />
+      <workItem from="1714925558205" duration="5132000" />
+      <workItem from="1714962953074" duration="12000" />
+      <workItem from="1714999966973" duration="357000" />
+      <workItem from="1715012055901" duration="5000" />
+      <workItem from="1715245704157" duration="1575000" />
+      <workItem from="1715260354726" duration="1800000" />
+      <workItem from="1715268994810" duration="2671000" />
+      <workItem from="1715306240218" duration="843000" />
+      <workItem from="1715488699632" duration="3604000" />
+      <workItem from="1715519040003" duration="212000" />
+      <workItem from="1715519609729" duration="1034000" />
+      <workItem from="1715520978294" duration="13913000" />
+      <workItem from="1715571911788" duration="24211000" />
+      <workItem from="1715655658310" duration="14115000" />
+      <workItem from="1715758897310" duration="17333000" />
+      <workItem from="1715782147111" duration="304000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FoodMart$CartServiceApplication.ic" NAME="CartServiceApplication Coverage Results" MODIFIED="1715262151637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>

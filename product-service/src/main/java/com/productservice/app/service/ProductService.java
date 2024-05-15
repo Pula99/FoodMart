@@ -8,15 +8,11 @@ import org.springframework.data.domain.Pageable;
 @Service
 public interface ProductService {
 
-     Page<Product> getAllProduct(Pageable pageable);
-
-     Product addProduct(Product product) throws Exception;
-
-     Product updateProduct(Integer id ,  Product product) throws Exception;
-
-     Product patchProduct(Integer id, Product data) throws Exception;
-
-     Product getProductById(Integer id) throws Exception;
-
-     void deleteProduct(Integer id) throws Exception;
+     Page<Product> getAllProducts(Pageable pageable);
+     Product getProductById(String id);
+     Page<Product> getallProductsByCategory(String category, Pageable pageable);
+     Product addProduct(Product product);
+     Product updateProduct(String id ,  Product product);
+     Product patchProduct(String id, Product data);
+     void deleteProduct(String id);
 }

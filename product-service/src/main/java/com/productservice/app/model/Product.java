@@ -2,7 +2,6 @@ package com.productservice.app.model;
 
 
 import jakarta.persistence.*;
-import lombok.Builder;
 import lombok.Data;
 
 @Data
@@ -11,8 +10,8 @@ import lombok.Data;
 public class Product {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private String id;
 
     private String productName;
     private String productDescription;
