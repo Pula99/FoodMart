@@ -1,5 +1,6 @@
 package com.cartservice.app.model;
 
+
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -11,11 +12,12 @@ import java.util.List;
 public class Cart {
 
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @GeneratedValue (strategy = GenerationType.UUID)
+    private String  id;
+
     private Integer userId;
 
-    @OneToMany(mappedBy = "cart", cascade = CascadeType.MERGE)
+    @OneToMany(mappedBy = "cart", fetch = FetchType.LAZY)
     private List<CartItem> cartItems;
 
 }

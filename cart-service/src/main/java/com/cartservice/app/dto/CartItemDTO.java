@@ -4,14 +4,11 @@ import jakarta.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Data
-public class ItemsDTO {
+public class CartItemDTO {
 
 
-    private long id;
+    private Integer productId;
 
     @NotBlank(message = "quantity should not be empty")
     private Integer quantity;
-
-    @NotBlank(message = "price should not be empty")
-    private Long price;
 }

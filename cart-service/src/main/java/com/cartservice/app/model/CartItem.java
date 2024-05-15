@@ -1,5 +1,7 @@
 package com.cartservice.app.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -9,14 +11,16 @@ import lombok.Data;
 public class CartItem {
 
     @Id
-    @GeneratedValue (strategy = GenerationType.IDENTITY)
-    private Integer id;
+    @GeneratedValue (strategy = GenerationType.UUID)
+    private String id;
 
-    private Integer productID;
+    private Integer productId;
 
     private Integer quantity;
 
-    @ManyToOne
-    @JoinColumn(name = "cart_items")
+
+    @ManyToOne(cascade = CascadeType.MERGE)
+    @JoinColumn(name = "cart")
+    @JsonBackReference
     private Cart cart;
 }
