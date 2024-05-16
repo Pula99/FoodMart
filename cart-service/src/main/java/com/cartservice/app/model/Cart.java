@@ -17,7 +17,7 @@ public class Cart {
 
     private Integer userId;
 
-    @OneToMany(mappedBy = "cart", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "cart", fetch = FetchType.LAZY ,cascade = CascadeType.ALL)
     private List<CartItem> cartItems;
 
 }

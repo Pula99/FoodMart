@@ -5,50 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="365a8ee1-0923-4bac-8eec-e7035cfc32e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/CartServiceApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/configs/ModelMapperConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/configs/WebMvcConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/controller/AbstractCartController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/controller/CartController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/dto/CartItemDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/dto/CreateCartDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/dto/UpdateCartItemDTO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/exception/CustomException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/exception/ErrorResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/exception/GlobalExceptionHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/exception/NotFound.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/model/Cart.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/model/CartItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/repository/CartItemRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/repository/CartRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/service/CartItemService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/service/CartService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/service/impl/CartItemImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/service/impl/CartServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/database.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart-service/target/classes/endpoints.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/configs/WebMvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/controller/AbstractProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/exception/CustomException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/exception/ErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/exception/NotFound.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/configs/ModelMapperConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/configs/ModelMapperConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/controller/AbstractCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/controller/AbstractCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/service/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/controller/AbstractProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/controller/AbstractProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/dto/PatchProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/dto/PatchProductDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/repository/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/repository/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/endpoints.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/endpoints.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +182,8 @@
       <workItem from="1715571911788" duration="24211000" />
       <workItem from="1715655658310" duration="14115000" />
       <workItem from="1715758897310" duration="17333000" />
-      <workItem from="1715782147111" duration="304000" />
+      <workItem from="1715782147111" duration="1538000" />
+      <workItem from="1715842874744" duration="10926000" />
     </task>
     <servers />
   </component>
