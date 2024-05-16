@@ -1,15 +1,11 @@
 package com.productservice.app.controller;
 
 
-import lombok.RequiredArgsConstructor;
-import org.modelmapper.ModelMapper;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-@RequiredArgsConstructor
-public abstract class AbstractProductController {
+
+public abstract class AbstractController {
 
     protected <T> ResponseEntity<T> sendSuccessResponse(T response) {
         return ResponseEntity.ok(response);

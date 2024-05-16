@@ -45,8 +45,8 @@ public class ProductServiceImpl implements ProductService {
     public Product getProductById(String id){
         try {
             return productRepository.findById(id).orElseThrow(() -> new NotFound("Product not found with id : %s", id ));
-        } catch (NotFound notFound) {
-            throw notFound;
+        } catch (NotFound e) {
+            throw e;
         } catch (Exception exception) {
            log.error("Error occurred when getting product with id {}",id, exception);
            throw new CustomException("Error occurred when getting product with id : " + id, exception);

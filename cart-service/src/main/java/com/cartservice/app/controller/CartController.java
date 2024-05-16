@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("${carts.path}")
 @RequiredArgsConstructor
-public class CartController extends AbstractCartController {
+public class CartController extends AbstractController {
 
     private final CartService cartService;
     private final CartItemService cartItemService;
@@ -27,47 +27,31 @@ public class CartController extends AbstractCartController {
 
     @GetMapping
     protected ResponseEntity<Page<Cart>> getAllCarts(Pageable pageable) {
-        try {
             Page<Cart> carts = cartService.getAllCart(pageable);
             return sendSuccessResponse(carts);
-        } catch (Exception e) {
-            throw new CustomException("Error getting all carts", e);
-        }
+
     }
 
     @GetMapping("/{id}")
     protected ResponseEntity<Cart> getCartById(@PathVariable String id) {
-        try {
             Cart cart = cartService.getCartById(id);
             return sendSuccessResponse(cart);
-        } catch (Exception e) {
-            throw new CustomException("Error getting cart with id " + id, e);
-        }
     }
 
     @PostMapping
-    protected ResponseEntity<Cart> createCart(CreateCartDTO createCartDTO) {
-        try {
+    protected ResponseEntity<Cart> createCart(@Valid @RequestBody CreateCartDTO createCartDTO) {
             Cart cart = modelMapper.map(createCartDTO, Cart.class);
             Cart cartCreated = cartService.createCart(cart);
             return sendCreatedResponse(cartCreated);
-        } catch (Exception e) {
-            throw new CustomException("Error occurred when creating new cart", e);
-        }
     }
 
     @PostMapping("/{id}")
     protected ResponseEntity<Cart> addProductToCart(
             @PathVariable String id,
-            @Valid
-            @RequestBody CartItemDTO cartItemDTO) {
-        try {
+            @Valid @RequestBody CartItemDTO cartItemDTO) {
             CartItem cartItem = modelMapper.map(cartItemDTO, CartItem.class);
             Cart cart = cartService.addCartItem(id, cartItem);
             return sendCreatedResponse(cart);
-        } catch (Exception e) {
-            throw new CustomException("Error occurred when adding new product to cart", e);
-        }
     }
 
 
@@ -75,27 +59,18 @@ public class CartController extends AbstractCartController {
     protected ResponseEntity<CartItem> updateCartItem(
             @PathVariable String id,
             @PathVariable String cartItemId,
-            @Valid
-            @RequestBody UpdateCartItemDTO updateCartItemDTO
+            @Valid @RequestBody UpdateCartItemDTO updateCartItemDTO
     ) {
-        try {
             cartService.getCartById(id);
             CartItem item = modelMapper.map(updateCartItemDTO, CartItem.class);
             CartItem updatedCartItem = cartItemService.updateCartItem(cartItemId, item);
             return sendUpdatedResponse(updatedCartItem);
-        } catch (Exception e) {
-            throw new CustomException("Error occurred when updating a product with id : " + cartItemId, e);
-        }
     }
 
     @DeleteMapping("/{id}")
     protected ResponseEntity<String> deleteCartById(@PathVariable String id) {
-        try {
             cartService.deleteCartByCartId(id);
             return sendNoContentResponse(id);
-        } catch (Exception e) {
-            throw new CustomException("Error occurred when deleting cart with id : " + id, e);
-        }
     }
 
     @DeleteMapping("/{id}/{cartItemId}")
@@ -103,12 +78,8 @@ public class CartController extends AbstractCartController {
             @PathVariable String id,
             @PathVariable String cartItemId
     ) {
-        try {
             cartService.getCartById(id);
             cartItemService.deleteCartItemByCartItemId(cartItemId);
             return sendNoContentResponse(cartItemId);
-        } catch (Exception e) {
-            throw new CustomException("Error occurred when deleting cart item with id : " + cartItemId, e);
-        }
     }
 }
