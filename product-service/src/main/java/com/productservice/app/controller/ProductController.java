@@ -45,7 +45,7 @@ public class ProductController extends AbstractController {
     }
 
     @PostMapping
-    protected ResponseEntity<Product> addProduct(@Valid @RequestBody CreateProductDTO createProductDTO) {
+    protected ResponseEntity<Product> addProduct( @Valid @RequestBody CreateProductDTO createProductDTO) {
             Product product = modelMapper.map(createProductDTO, Product.class);
             Product newProduct = productService.addProduct(product);
             return sendCreatedResponse(newProduct);

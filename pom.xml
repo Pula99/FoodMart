@@ -27,7 +27,8 @@
 	<modules>
 		<module>cart-service</module>
 		<module>product-service</module>
-	</modules>
+        <module>user-service</module>
+    </modules>
 
 
 </project>

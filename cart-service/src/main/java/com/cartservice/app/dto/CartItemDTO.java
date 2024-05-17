@@ -7,7 +7,7 @@ import lombok.Data;
 public class CartItemDTO {
 
 
-    private Integer productId;
+    private String productId;
 
     @NotBlank(message = "quantity should not be empty")
     private Integer quantity;

@@ -5,13 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="365a8ee1-0923-4bac-8eec-e7035cfc32e1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/userservice/app/dto/UpdateUserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/controller/AbstractCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/controller/AbstractCartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/controller/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/model/Cart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/service/CartService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/controller/AbstractProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/controller/AbstractProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/dto/CartItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/dto/CartItemDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/model/CartItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/controller/AbstractCartController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/controller/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/controller/CartController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/dto/CartItemDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/dto/CartItemDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/model/CartItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/model/CartItem.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/ProductServiceApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/database.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,46 +70,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.CartServiceApplication.executor": "Run",
-    "JUnit.All in CartService.executor": "Run",
-    "Maven.FoodMart [compile].executor": "Run",
-    "Maven.ProductService [clean].executor": "Run",
-    "Maven.ProductService [compile].executor": "Run",
-    "Maven.ProductService [install].executor": "Run",
-    "Maven.ProductService [package].executor": "Run",
-    "Maven.ProductService [test].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.CartServiceApplication (1).executor": "Run",
-    "Spring Boot.CartServiceApplication.executor": "Run",
-    "Spring Boot.ProductServiceApplication.executor": "Run",
-    "git-widget-placeholder": "feature/cart-service",
-    "jdk.selected.JAVA_MODULE": "openjdk-21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Kusal/ProjectFoodMart/FoodMart-Backend/cart-service",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "run.configurations.included.in.services": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CartServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.UserServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.All in CartService.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.FoodMart [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ProductService [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ProductService [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ProductService [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ProductService [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.ProductService [test].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.CartServiceApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.CartServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.ProductServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature/user-service&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Kusal/ProjectFoodMart/FoodMart-Backend/user-service/src/main/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.cartservice.app.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Kusal\ProjectFoodMart\FoodMart-Backend\user-service\src\main\resources" />
+      <recent name="D:\Kusal\ProjectFoodMart\FoodMart-Backend\user-service\src\main\java\com\userservice\app\configs" />
+      <recent name="D:\Kusal\ProjectFoodMart\FoodMart-Backend\user-service\src\main\java\com\userservice\app\exception" />
       <recent name="D:\Kusal\FoodMart" />
       <recent name="D:\Kusal\FoodMart\cart-service\src\main\resources" />
     </key>
@@ -116,7 +139,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.CartServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
     <configuration name="CartServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="CartService" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.cartservice.app.CartServiceApplication" />
@@ -131,8 +154,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="UserService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.userservice.app.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Spring Boot.ProductServiceApplication" />
+      <item itemvalue="Spring Boot.UserServiceApplication" />
       <item itemvalue="Spring Boot.CartServiceApplication" />
     </list>
   </component>
@@ -184,6 +215,9 @@
       <workItem from="1715758897310" duration="17333000" />
       <workItem from="1715782147111" duration="1538000" />
       <workItem from="1715842874744" duration="10926000" />
+      <workItem from="1715857396578" duration="9939000" />
+      <workItem from="1715930597410" duration="5415000" />
+      <workItem from="1715938260064" duration="2058000" />
     </task>
     <servers />
   </component>

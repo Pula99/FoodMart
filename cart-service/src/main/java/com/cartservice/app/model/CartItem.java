@@ -14,7 +14,7 @@ public class CartItem {
     @GeneratedValue (strategy = GenerationType.UUID)
     private String id;
 
-    private Integer productId;
+    private String productId;
 
     private Integer quantity;
 

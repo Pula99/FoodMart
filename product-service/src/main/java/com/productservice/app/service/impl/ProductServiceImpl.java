@@ -56,7 +56,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public Product addProduct(Product product) {
         try {
-            return productRepository.save(product);
+               return productRepository.save(product);
         } catch (Exception exception) {
             log.error("Error occurred when adding new product with name {}, error: {}", product.getProductName(), exception.getMessage());
             throw exception;
