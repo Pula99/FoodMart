@@ -18,6 +18,9 @@ public class CreateProductDTO {
     @NotBlank(message = "Product category should not be empty")
     private String category;
 
+    @NotBlank(message = "Product Image Url should not be empty")
+    private String imageURL;
+
     @NotNull(message = "Product price should not be empty")
     private Long price;
 }

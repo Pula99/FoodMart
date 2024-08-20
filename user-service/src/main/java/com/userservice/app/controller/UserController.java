@@ -2,7 +2,6 @@ package com.userservice.app.controller;
 
 import com.userservice.app.dto.CreateUserDTO;
 import com.userservice.app.dto.UpdateUserDTO;
-import com.userservice.app.exception.CustomException;
 import com.userservice.app.model.User;
 import com.userservice.app.service.UserService;
 import jakarta.validation.Valid;

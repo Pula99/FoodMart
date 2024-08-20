@@ -10,7 +10,9 @@ import org.springframework.stereotype.Service;
 public interface CartService {
 
     Cart createCart(Cart cart);
+    Cart updateCart(String id, Cart cart);
     Cart getCartById(String id);
+    Cart getCartByUserId(String userId);
     Page<Cart> getAllCart(Pageable pageable);
     Cart addCartItem(String id, CartItem cartItem);
     void deleteCartByCartId(String id);

@@ -15,7 +15,10 @@ public class Cart {
     @GeneratedValue (strategy = GenerationType.UUID)
     private String  id;
 
-    private Integer userId;
+    @Enumerated(EnumType.STRING)
+    private ConfirmationStatus confirmationStatus;
+
+    private String userId;
 
     @OneToMany(mappedBy = "cart", fetch = FetchType.LAZY ,cascade = CascadeType.ALL)
     private List<CartItem> cartItems;

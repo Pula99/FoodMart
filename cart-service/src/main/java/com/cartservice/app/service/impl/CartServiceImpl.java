@@ -10,6 +10,8 @@ import com.cartservice.app.service.CartItemService;
 import com.cartservice.app.service.CartService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.aspectj.weaver.ast.Not;
+import org.modelmapper.ModelMapper;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Service;
@@ -25,7 +27,7 @@ public class CartServiceImpl implements CartService {
 
     private final CartRepository cartRepository;
     private final CartItemRepository cartItemRepository;
-
+    private final ModelMapper modelMapper;
     private final CartItemService cartItemService;
 
 
@@ -53,6 +55,19 @@ public class CartServiceImpl implements CartService {
     }
 
     @Override
+    public Cart updateCart(String id, Cart updatedCart) {
+        try {
+            Cart cart = cartRepository.findById(id).orElseThrow(() -> new NotFound("item not found with id : %s", id));
+            modelMapper.map(updatedCart, cart);
+            return cartRepository.save(cart);
+        } catch (Exception exception) {
+            log.error("Error occurred when updating cart with cart id{} , error{} ", id, exception.getMessage());
+            throw exception;
+        }
+    }
+
+
+    @Override
     public Cart getCartById(String id) {
         try {
             return cartRepository.findById(id).orElseThrow(() -> new NotFound("Cart not found with id : %s", id));
@@ -62,7 +77,18 @@ public class CartServiceImpl implements CartService {
             log.error("Error occurred when getting cart with id {}", id, exception);
             throw new CustomException("Error occurred when getting cart with id : " + id, exception);
         }
+    }
 
+    @Override
+    public Cart getCartByUserId(String userId){
+        try {
+            return cartRepository.findByUserId(userId);
+        } catch (NotFound notFound) {
+            throw notFound;
+        } catch (Exception exception) {
+            log.error("Error occurred when getting cart with user id {}", userId, exception);
+            throw new CustomException("Error occurred when getting cart with user id : " , exception);
+        }
     }
 
     @Override

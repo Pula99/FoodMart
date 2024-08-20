@@ -9,6 +9,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.modelmapper.ModelMapper;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -24,8 +25,9 @@ public class ProductController extends AbstractController {
 
     @GetMapping
     protected ResponseEntity<Page<Product>> getAllProducts(Pageable pageable) {
-            Page<Product> products = productService.getAllProducts(pageable);
-            return sendSuccessResponse(products);
+//        Pageable customPageable = PageRequest.of(pageable.getPageNumber(), 4);
+        Page<Product> products = productService.getAllProducts(pageable);
+        return sendSuccessResponse(products);
     }
 
     @GetMapping("/categories/{category}")

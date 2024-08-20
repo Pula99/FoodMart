@@ -5,26 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="365a8ee1-0923-4bac-8eec-e7035cfc32e1" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/com/userservice/app/dto/UpdateUserDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/dto/UpdatedCartDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/model/ConfirmationStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/dto/CartItemDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/dto/CartItemDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/model/CartItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/model/CartItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/controller/AbstractCartController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/dto/CreateCartDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/dto/CreateCartDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/exception/CustomException.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/exception/CustomException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/repository/CartRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/repository/CartRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/service/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/service/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/service/impl/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/java/com/cartservice/app/service/impl/CartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/controller/CartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/controller/CartController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/dto/CartItemDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/dto/CartItemDTO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/model/CartItem.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/model/CartItem.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/dto/CreateCartDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/dto/CreateCartDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/exception/CustomException.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/exception/CustomException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/model/Cart.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/model/Cart.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/repository/CartRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/repository/CartRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/service/CartService.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/service/CartService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/service/impl/CartServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/cart-service/target/classes/com/cartservice/app/service/impl/CartServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/dto/CreateProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/dto/CreateProductDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/dto/PatchProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/dto/PatchProductDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/model/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/java/com/productservice/app/service/impl/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/java/com/userservice/app/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/java/com/userservice/app/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +43,7 @@
       <list>
         <option value="package.json" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -94,7 +102,7 @@
     &quot;git-widget-placeholder&quot;: &quot;feature/user-service&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Kusal/ProjectFoodMart/FoodMart-Backend/user-service/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Kusal/Kandy/App&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -163,8 +171,8 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ProductServiceApplication" />
-      <item itemvalue="Spring Boot.UserServiceApplication" />
       <item itemvalue="Spring Boot.CartServiceApplication" />
+      <item itemvalue="Spring Boot.UserServiceApplication" />
     </list>
   </component>
   <component name="SharedIndexes">
@@ -217,12 +225,62 @@
       <workItem from="1715842874744" duration="10926000" />
       <workItem from="1715857396578" duration="9939000" />
       <workItem from="1715930597410" duration="5415000" />
-      <workItem from="1715938260064" duration="2058000" />
+      <workItem from="1715938260064" duration="2812000" />
+      <workItem from="1716003607563" duration="663000" />
+      <workItem from="1716005425238" duration="6000" />
+      <workItem from="1716177954091" duration="9221000" />
+      <workItem from="1716304922357" duration="35000" />
+      <workItem from="1716359157187" duration="24000" />
+      <workItem from="1716536379297" duration="472000" />
+      <workItem from="1717672361699" duration="12000" />
+      <workItem from="1717678033847" duration="1835000" />
+      <workItem from="1718091889257" duration="4983000" />
+      <workItem from="1718186643640" duration="2460000" />
+      <workItem from="1718262697505" duration="1206000" />
+      <workItem from="1718555529314" duration="2878000" />
+      <workItem from="1718593411383" duration="1322000" />
+      <workItem from="1718676406886" duration="2352000" />
+      <workItem from="1718780816699" duration="1203000" />
+      <workItem from="1720018895098" duration="1206000" />
+      <workItem from="1720073577414" duration="1218000" />
+      <workItem from="1720089381421" duration="346000" />
+      <workItem from="1720149135455" duration="554000" />
+      <workItem from="1720519483636" duration="2228000" />
+      <workItem from="1720602749339" duration="2536000" />
+      <workItem from="1720676249533" duration="4526000" />
+      <workItem from="1721109606041" duration="8585000" />
+      <workItem from="1721186076596" duration="16796000" />
+      <workItem from="1721308662826" duration="6569000" />
+      <workItem from="1721649170861" duration="3548000" />
+      <workItem from="1721653008635" duration="693000" />
+      <workItem from="1721701412074" duration="605000" />
+      <workItem from="1721702829741" duration="3655000" />
+      <workItem from="1721718459797" duration="12228000" />
+      <workItem from="1722310487470" duration="1263000" />
+      <workItem from="1722335731195" duration="1075000" />
+      <workItem from="1722355286313" duration="608000" />
+      <workItem from="1722437992441" duration="644000" />
+      <workItem from="1722482826134" duration="5000" />
+      <workItem from="1722861776257" duration="604000" />
+      <workItem from="1723006198846" duration="5000" />
+      <workItem from="1723018125306" duration="36000" />
+      <workItem from="1723372988128" duration="24000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FoodMart$CartServiceApplication.ic" NAME="CartServiceApplication Coverage Results" MODIFIED="1715262151637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

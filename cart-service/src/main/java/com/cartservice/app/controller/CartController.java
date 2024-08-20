@@ -3,6 +3,7 @@ package com.cartservice.app.controller;
 import com.cartservice.app.dto.CartItemDTO;
 import com.cartservice.app.dto.CreateCartDTO;
 import com.cartservice.app.dto.UpdateCartItemDTO;
+import com.cartservice.app.dto.UpdatedCartDTO;
 import com.cartservice.app.exception.CustomException;
 import com.cartservice.app.model.Cart;
 import com.cartservice.app.model.CartItem;
@@ -38,6 +39,12 @@ public class CartController extends AbstractController {
             return sendSuccessResponse(cart);
     }
 
+    @GetMapping("user/{userId}")
+    protected ResponseEntity<Cart> getCartByUserId(@PathVariable String userId){
+        Cart cart = cartService.getCartByUserId(userId);
+        return sendSuccessResponse(cart);
+    }
+
     @PostMapping
     protected ResponseEntity<Cart> createCart(@Valid @RequestBody CreateCartDTO createCartDTO) {
             Cart cart = modelMapper.map(createCartDTO, Cart.class);
@@ -65,6 +72,17 @@ public class CartController extends AbstractController {
             CartItem item = modelMapper.map(updateCartItemDTO, CartItem.class);
             CartItem updatedCartItem = cartItemService.updateCartItem(cartItemId, item);
             return sendUpdatedResponse(updatedCartItem);
+    }
+
+    @PutMapping("/{id}")
+    protected ResponseEntity<Cart> updateCart(
+            @PathVariable String id,
+            @Valid @RequestBody UpdatedCartDTO updatedCartDTO
+            ) {
+        cartService.getCartById(id);
+        Cart cart = modelMapper.map(updatedCartDTO, Cart.class);
+        Cart updatedCart = cartService.updateCart(id,cart);
+        return sendUpdatedResponse(updatedCart);
     }
 
     @DeleteMapping("/{id}")

@@ -79,15 +79,15 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Product patchProduct(String id, Product updatedProduct){
+    public Product patchProduct(String id, Product patchedProduct){
         try {
             Product product = productRepository.findById(id).orElseThrow(() -> new NotFound("Product not found with id : %s", id));
-            modelMapper.map(updatedProduct, product);
+            modelMapper.map(patchedProduct, product);
             return productRepository.save(product);
         } catch (NotFound notFound) {
             throw notFound;
         } catch (Exception exception) {
-            log.error("Error occurred when Updating product with id {}, error: {}", updatedProduct.getId(), exception.getMessage());
+            log.error("Error occurred when Updating product with id {}, error: {}", patchedProduct.getId(), exception.getMessage());
             throw exception;
         }
     }
